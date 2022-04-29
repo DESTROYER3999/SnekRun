@@ -1,0 +1,111 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  color: #c47200;
+}
+
+ol {
+  margin: 0px;
+  padding: 0px;
+}
+
+canvas {
+  /* box-sizing: border-box; */
+  /* background-color: white; */
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+#info {
+  z-index: 25;
+}
+
+#game {
+  z-index: 20;
+}
+
+#grid {
+  z-index: 10;
+}
+
+#top-left {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+  z-index: 15;
+}
+
+#top-left > div {
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+  font-size: 16px;
+  color: black;
+  border-radius: 10px;
+  border: 2px solid #c47200;
+}
+
+
+#top-left > div > span {
+  font-size: 22px;
+}
+#leaderboard > div > ol {
+  margin-top: 5px;
+  padding-left: 30px;
+}
+
+#settings {
+  background-color: #ffe0a9;
+  padding: 10px;
+}
+#settings > div {
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+#settings > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  width: 100px;
+}
+input[type="number"] {
+  width: 50px;
+}
+input[type="checkbox"] {
+
+}
+
+
+input[type="text"], input[type="number"] {
+  height: 20px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: none;
+}
+
+#leaderboard {
+  background-color: #ffe0a9;
+  padding: 10px;
+}

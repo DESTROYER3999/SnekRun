@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snek Run</title>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="top-left">
+      <div id="leaderboard">
+        <span>Leaderboard</span>
+        <div>
+          <ol id="leaderboard-list">
+            <!-- <li>Bob</li>
+                    <li>dude</li>
+                    <li>pogger</li> -->
+          </ol>
+        </div>
+      </div>
+      <div id="settings">
+        <span>Settings</span>
+        <div>
+          <div><span>Name</span><input id="username-input" type="text" /></div>
+          <div><span>Color</span><input id="color-input" type="color" /></div>
+          <div>
+            <span>Show names</span
+            ><input id="show-names-input" type="checkbox" />
+          </div>
+          <div>
+            <span>Snek size</span>
+            <input id="snek-size-input" type="number"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <canvas id="grid"></canvas>
+    <canvas id="game"></canvas>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
